@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <form action="signup.php" method="post">
+        Nome: <input type="text" name="signup_usuario"><br>
+        Email: <input type="email" name="signup_email"><br>
+        Senha: <input type="password" name="signup_senha"><br>
+        Gênero: <select id="gender" name="signup_gender">
+            <option value="">-Selecione o Genero-</option>
+            <option value="Male">Homem</option>
+            <option value="Female">Mulher</option>
+            <option value="Other">Outro</option>
+        </select><br>
+        <input type="submit" name="botao" value="Confirmar">
+    </form>
+</body>
+</html>
