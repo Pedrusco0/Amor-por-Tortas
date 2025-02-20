@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor por Comida</title>
+    <meta name="description" content="Explore dezenas receitas entre os devs ao redor do mundo!">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button class="botao-open-sidebar" onclick="sidebar_open()">☰</button>
+        <nav>
+            <span class="logo">Amor por Comida</span>
+            <ul class="menu">
+                <li><a>Home</a></li>
+                <li><a>Receitas</a></li>
+                <li><a>Novidades</a></li>
+                <li><a>Melhor avaliadas</a></li>
+            </ul>
+            <a class="login" href="login/login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="sidebar_close()"></div>
+
+
+    <div class="menu-lateral" id="sidebar">
+        <div class="menu-lateral-logo">
+            <span class="logo">Amor por Comida</span>
+        </div>
+        <ul class="menu-lateral-opcoes">
+            <li>
+                <button onclick="sidebar_close()" class="botao-close-sidebar">× Fechar</button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="assets/icone-home.svg" alt="Página Principal">
+                    <span>Página Principal</span>
+                </a>
+            </li>
+            <li>
+                <a href="pesquisar/pesquisar.html">
+                    <img src="assets/icone-pesquisar.svg" alt="Pesquisar">
+                    <span>Pesquisar</span>
+                </a>
+            </li>
+            <li>
+                <a href="postar/postar.html">
+                    <img src="assets/icone-postar.svg" alt="Postar Receita">
+                    <span>Postar Receita</span>
+                </a>
+            </li>
+            <li>
+                <a href="perfil/perfil.html">
+                    <img src="assets/icone-perfil.svg" alt="Perfil">
+                    <span>Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="perfil/settings.html">
+                    <img src="assets/icone-settings.svg" alt="Opções">
+                    <span>Opções</span>
+                </a>
+            </li>
+            <li>
+                <a href="login/logout.php">
+                    <img src="assets/icone-sair.svg" alt="Sair">
+                    <span>Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidade</span>
+                    <h1>Encontre a receita perfeita! </h1>
+                    <hr/>
+                    <h2 class="hero-subtitulo">Explore dezenas receitas de torta entre os devs ao redor do mundo!</h2>
+                </header>
+                <div class="hero-imagens-container">
+                    <figure><img src="assets/foto1.jpg"/></figure>
+                    <figure><img src="assets/foto2.jpg"/></figure>
+                    <figure><img src="assets/foto3.jpg"/></figure>
+                    <figure><img src="assets/foto4.jpg"/></figure>
+                    <figure><img src="assets/foto5.jpg"/></figure>
+                    <figure><img src="assets/foto6.jpg"/></figure>
+                    <figure><img src="assets/foto7.jpg"/></figure>
+                    <figure><img src="assets/foto8.jpg"/></figure>
+                    <figure><img src="assets/foto9.jpg"/></figure>
+                    <figure><img src="assets/foto10.jpg"/></figure>
+                    <figure><img src="assets/foto11.jpg"/></figure>
+                    <figure><img src="assets/foto12.jpg"/></figure>
+                    <figure><img src="assets/foto13.jpg"/></figure>
+                </div>
+            </section>
+        </div>
+        <section class="botao-container">
+            <button type="button">
+                <img src="assets/button2.svg"/>
+            </button>
+        </section>
+        <section class="receitas">
+            <header class="receitas-cabecalho">
+                <span class="destaque marrom">receitas</span>
+                <h2 class="receitas-titulo">Confira as últimas receitas</h2>
+                <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta🔥<span>
+                            <h3 class="receita-titulo">Torta de Limão</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário · 4/4</p>
+                    </header>
+                    <p class="receita-descricao">Uma torta para os amantes do sabor ácido e refrescante.😍</p>
+                    <div class="receita-autor">
+                        <img src="assets/foto10.jpg"/>
+                        <span class="receita-autor-nome">Amante de Torta</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-copy">Copyright &lt;CODEFEE /&gt; 2025</p>
+        <p class="footer-autor">Feito com muitas receitas e ❤ por Jack</p>
+    </footer>
+
+    <script>
+        function sidebar_open() {
+            document.getElementById("sidebar").classList.add("active");
+            document.getElementById("sidebar-overlay").style.display = "block";
+        }
+    
+        function sidebar_close() {
+            document.getElementById("sidebar").classList.remove("active");
+            document.getElementById("sidebar-overlay").style.display = "none";
+        }
+    </script>
+    </script>
+</body>
+</html>

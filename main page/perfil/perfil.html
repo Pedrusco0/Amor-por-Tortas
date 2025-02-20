@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário - Amor por Comida</title>
+    <link rel="stylesheet" type="text/css" href="perfil.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">Amor por Comida</span>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a>Receitas</a></li>
+                <li><a>Novidades</a></li>
+                <li><a>Melhor avaliadas</a></li>
+            </ul>
+            <a class="login" href="login/login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="perfil-container">
+            <!-- banner -->
+            <div class="perfil-banner">
+                <img src="../assets/banner.jpeg" alt="Banner do Perfil">
+            </div>
+
+            <!-- foto de perfil -->
+            <div class="perfil-foto">
+                <img src="../assets/perfil.png" alt="Foto de Perfil">
+            </div>
+            
+            <div class="perfil-editar">
+                <a href="editar/editar.php">
+                <button class="editar-perfil" >Editar Perfil</button>
+                </a>
+            </div>
+                <!--perfil-->
+                <form action="delete.php" method="POST" class="delete">
+            <div class="perfil-info">
+                <h1 class="perfil-nome">Nome do usuario</h1>
+                <h2 class="perfil-usuario" id="user">joao</h2>
+                <p class="perfil-bio">Esta é uma breve biografia do usuário. Aqui ele pode compartilhar um pouco sobre si mesmo.</p>
+            </div>
+                <!--apagar perfil-->
+            <div class="perfil-botao">
+                <button class="apagar-perfil" name="botao">Apagar Perfil</button>
+            </div>
+                </form>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-copy">Copyright &lt;CODEFEE /&gt; 2025</p>
+        <p class="footer-autor">Feito com muitas receitas e ❤ por Jack</p>
+    </footer>
+</body>
+</html>

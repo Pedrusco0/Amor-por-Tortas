@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Amor por Comida</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1 class="signup-titulo">Cadastro</h1>
+        <form action="signup.php" method="post" class="signup-form">
+            <div class="form-group">
+                <label for="signup_nome">Nome:</label>
+                <input type="text" id="signup_nome" name="signup_nome" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_sobrenome">Sobrenome:</label>
+                <input type="text" id="signup_sobrenome" name="signup_sobrenome" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_user">Usuário:</label>
+                <input type="text" id="signup_user" name="signup_user" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_email">Email:</label>
+                <input type="email" id="signup_email" name="signup_email" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_senha">Senha:</label>
+                <input type="password" id="signup_senha" name="signup_senha" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_confirmar_senha">Confirme a senha:</label>
+                <input type="password" id="signup_confirmar_senha" name="signup_confirmar_senha" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_fone">Telefone:</label>
+                <input type="tel" id="signup_fone" name="signup_fone" placeholder="53 99999-9999" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_nasc">Data de Nascimento:</label>
+                <input type="date" id="signup_nasc" name="signup_nasc" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="signup_gender">Gênero:</label>
+                <select id="signup_gender" name="signup_gender" class="form-input">
+                    <option value="">-Selecione o Gênero-</option>
+                    <option value="Male">Homem</option>
+                    <option value="Female">Mulher</option>
+                    <option value="Other">Outro</option>
+                </select>
+            </div>
+            <button type="submit" name="botao" class="form-botao">Confirmar</button>
+            <p class="signup-login">Já tem cadastro? <a href="../login/login.html">Faça login aqui</a></p>
+        </form>
+    </div>
+</body>
+</html>
